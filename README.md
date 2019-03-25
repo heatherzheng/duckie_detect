@@ -1,1 +1,1 @@
-# duckie_detect
+# duckie_tutorial

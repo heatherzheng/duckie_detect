@@ -1,0 +1,65 @@
+tensor(8.6249, grad_fn=<SqueezeBackward0>)
+[6.0]
+****
+tensor(8.4149, grad_fn=<SqueezeBackward0>)
+[8.0]
+****
+tensor(8.4468, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(4.2296, grad_fn=<SqueezeBackward0>)
+[4.0]
+****
+tensor(8.2133, grad_fn=<SqueezeBackward0>)
+[6.0]
+****
+tensor(6.6518, grad_fn=<SqueezeBackward0>)
+[8.0]
+****
+tensor(8.0120, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(6.7655, grad_fn=<SqueezeBackward0>)
+[6.0]
+****
+tensor(7.9633, grad_fn=<SqueezeBackward0>)
+[8.0]
+****
+tensor(7.9409, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(7.3089, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(7.7140, grad_fn=<SqueezeBackward0>)
+[8.0]
+****
+tensor(8.6959, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(8.8917, grad_fn=<SqueezeBackward0>)
+[8.0]
+****
+tensor(8.8597, grad_fn=<SqueezeBackward0>)
+[6.0]
+****
+tensor(8.5621, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(8.9136, grad_fn=<SqueezeBackward0>)
+[8.0]
+****
+tensor(7.7402, grad_fn=<SqueezeBackward0>)
+[6.0]
+****
+tensor(8.6192, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(8.5225, grad_fn=<SqueezeBackward0>)
+[10.0]
+****
+tensor(7.9042, grad_fn=<SqueezeBackward0>)
+[6.0]
+****
+tensor(8.6886, grad_fn=<SqueezeBackward0>)
+[8.0]
