@@ -41,19 +41,21 @@ def main():
             box_x.append(temp_box_x)
             box_y.append(temp_box_y)
             box_min.append(min(temp_box_x,temp_box_y))
-    #a,_ = optimization.curve_fit(func,center_x,real_angle)
-    a,_ = optimization.curve_fit(func,box_x,real_dist)
+    a,_ = optimization.curve_fit(func,center_x,real_angle)
+    b,_ = optimization.curve_fit(func,box_x,real_dist)
+    print(a[0],a[1])
+    print(b[0],b[1])
     result = []
-    for i in box_x:
+    for i in center_x:
         result.append(func(i,a[0],a[1]))
     #use graph to show the relationship
     #plt.plot(center_y, center_x,real_dist, 'ro')
     plt.xlabel('box_size')
     plt.ylabel('distance')
-    plt.plot(box_x, real_dist, 'ro')
-    plt.plot(box_x, result, 'bo')
-    #plt.plot(center_x, real_angle, 'ro')
-    #plt.plot(center_x, result, 'bo')
+    #plt.plot(box_x, real_dist, 'ro')
+    #plt.plot(box_x, result, 'bo')
+    plt.plot(center_x, real_angle, 'ro')
+    plt.plot(center_x, result, 'bo')
     plt.show()
     #optimization.curve_fit(func1, img_dist,img_angle,bot_w,bot_h,real_dist)
 
