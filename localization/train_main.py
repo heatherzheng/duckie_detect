@@ -27,15 +27,20 @@ def read_input():
 			i = i.strip("\n")
 			i = i.split()
 			i = [float(x) for x in i]
+			temp = []
+			temp_box_x = int(i[4])-int(i[2])
+			temp_box_y = int(i[5])-int(i[3])
+			temp.append(i[0])
+			temp.append(min(temp_box_x,temp_box_y))
 			data_outputs.append(i[1:2])
-			data_inputs.append(i[2:])
+			data_inputs.append(temp)
 	return data_inputs,data_outputs
 ## add more data: velocity , omega, past position
 if __name__ == '__main__':
 	train_inputs, train_outputs= read_input()
 	m = m()
 	m.load_state_dict(torch.load('model_1.pt'))
-	optimizer = optim.Adam(m.parameters(),lr=0.001)
+	optimizer = optim.Adam(m.parameters(),lr=0.005)
 	minibatch_size = 3
 	num_minibatches = len(train_inputs) // minibatch_size
 

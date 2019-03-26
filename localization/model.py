@@ -9,10 +9,10 @@ from torch import optim
 
 class model(nn.Module):
 
-    def __init__(self, hidden_dim=8):
+    def __init__(self, hidden_dim=4):
         super(model, self).__init__()
         self.hidden_dim = hidden_dim
-        self.first = nn.Linear(4,hidden_dim)
+        self.first = nn.Linear(2,hidden_dim)
         self.last = nn.Linear(hidden_dim,1)
         self.loss = nn.MSELoss(reduction='sum')
 

@@ -10,6 +10,7 @@ from pathlib import Path
 from model import model as m
 import least_square
 
+### read train & test input and output
 def read_input():
 	data_inputs = []
 	data_outputs = []
@@ -19,9 +20,13 @@ def read_input():
 			i = i.strip("\n")
 			i = i.split()
 			i = [float(x) for x in i]
-			print(i)
+			temp = []
+			temp_box_x = int(i[4])-int(i[2])
+			temp_box_y = int(i[5])-int(i[3])
+			temp.append(i[0])
+			temp.append(min(temp_box_x,temp_box_y))
 			data_outputs.append(i[1:2])
-			data_inputs.append(i[2:])
+			data_inputs.append(temp)
 	return data_inputs,data_outputs
 
 if __name__ == '__main__':
