@@ -37,6 +37,8 @@ def main():
             center_x.append((int(i[2])+int(i[4]))/2)
             center_y.append((int(i[3])+int(i[5]))/2)
             temp_box_x = int(i[4])-int(i[2])
+            if(temp_box_x<5):
+                print(str(i))
             temp_box_y = int(i[5])-int(i[3])
             box_x.append(temp_box_x)
             box_y.append(temp_box_y)
@@ -48,12 +50,12 @@ def main():
     result = []
     for i in center_x:
         result.append(func(i,a[0],a[1]))
-    #use graph to show the relationship
+
     #plt.plot(center_y, center_x,real_dist, 'ro')
-    plt.xlabel('box_size')
-    plt.ylabel('distance')
-    #plt.plot(box_x, real_dist, 'ro')
-    #plt.plot(box_x, result, 'bo')
+    #plt.xlabel("box_x_size")
+    #plt.ylabel('distance')
+    plt.xlabel("center_x_axis")
+    plt.ylabel('angle')
     plt.plot(center_x, real_angle, 'ro')
     plt.plot(center_x, result, 'bo')
     plt.show()
