@@ -73,5 +73,6 @@ def main():
     plt.plot(box_x, result, 'bo')
     plt.show()
     #optimization.curve_fit(func1, img_dist,img_angle,bot_w,bot_h,real_dist)
-
+    print(func(266+41/2,a[0],a[1]))
+    print(func1(42,b2[0],b2[1],b2[2]))
 main()
